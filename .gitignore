@@ -1,0 +1,27 @@
+# ===== 密钥与本地配置（严禁入库）=====
+.env
+.env.*
+!.env.example
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ===== IDE =====
+.idea/
+.vscode/
+
+# ===== 本地模型权重（体积大，不入库；克隆后单独下载）=====
+bge-base-zh-v1.5/
+bge-reranker-base/
+
+# ===== 可重建产物（python indexing.py 重建）=====
+vectorstore/
+
+# ===== 系统与日志 =====
+.DS_Store
+Thumbs.db
+*.log
